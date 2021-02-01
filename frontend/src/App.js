@@ -1,11 +1,23 @@
+import React from 'react'
+import './index.css'
+import './bootstrap.min.css'
+import { Container } from 'react-bootstrap'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-
-      
-    </div>
-  );
+    <>
+  <Header/>
+  <Container>
+  <main>
+      <h1>Bonanza</h1>
+      </main>
+  </Container>   
+  <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App
+
