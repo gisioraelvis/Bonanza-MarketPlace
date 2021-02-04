@@ -7,7 +7,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 const Header = () => {
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" collabseonselect>
+      <Navbar bg="dark" variant="dark" expand="lg" collabseonselect={true.toString()}>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
@@ -19,12 +19,12 @@ const Header = () => {
             <Nav className="ml-auto">
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i class="fas fa-shopping-cart"></i>Cart
+                  <i className="fas fa-shopping-cart"></i>Cart
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/login">
                 <Nav.Link href="#link">
-                  <i class="fas fa-user"></i>Sign In
+                  <i className="fas fa-user"></i>Sign In
                 </Nav.Link>
               </LinkContainer>
             </Nav>
